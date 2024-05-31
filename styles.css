@@ -1,0 +1,147 @@
+/* General styles */
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 14%, 20%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: url('images/bg-header-desktop.svg');
+    background-color: hsl(180, 29%, 50%);
+    padding: 5em;
+    text-align: center;
+    color: white;
+}
+
+main {
+    padding: 2em;
+}
+
+.filters {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+.clear-filters-container {
+    display: none;
+    margin-top: 1em;
+    text-align: right;
+}
+
+.clear-filters-btn {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clear-filters-btn:hover {
+    background-color: hsl(180, 31%, 55%);
+}
+
+.filters .filter-btn.active {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+}
+
+.filter-btn {
+    background-color: hsl(180, 31%, 95%);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+}
+
+.job-listings {
+    display: grid;
+    gap: 2em;
+}
+
+.job-card {
+    background-color: white;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.job-card .header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.job-card .header img {
+    width: 50px;
+    height: 50px;
+}
+
+.job-card .header .company-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-card .header .company-info .company {
+    font-weight: bold;
+}
+
+.job-card .header .company-info .tags {
+    display: flex;
+    gap: 0.5em;
+}
+
+.job-card .header .company-info .tags .tag {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border-radius: 12px;
+    padding: 0.25em 0.5em;
+    font-size: 0.75em;
+    text-transform: uppercase;
+}
+
+.job-card .details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.job-card .details .position {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: hsl(180, 14%, 20%);
+}
+
+.job-card .details .meta {
+    display: flex;
+    gap: 1em;
+    font-size: 0.875em;
+    color: hsl(180, 8%, 52%);
+}
+
+@media (min-width: 1440px) {
+    .job-listings {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1439px) {
+    .job-listings {
+        grid-template-columns: 1fr;
+    }
+}

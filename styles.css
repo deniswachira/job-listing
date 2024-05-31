@@ -20,6 +20,159 @@ header {
 main {
     padding: 2em;
 }
+/* Add this CSS to your styles.css file */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    background-color: hsl(180, 31%, 95%);
+    color: hsl(180, 14%, 20%);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.filter-btn .clear-individual-btn {
+    margin-left: 0.5em;
+    background: none;
+    border: none;
+    color: hsl(180, 14%, 20%);
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.clear-filters-container {
+    display: none;
+    margin-top: 1em;
+    text-align: right;
+}
+
+.clear-filters-btn {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clear-filters-btn:hover {
+    background-color: hsl(180, 31%, 55%);
+}
+
+.filters .filter-btn.active {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+}
+
+.job-card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-card .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.job-card .header img {
+    height: 50px;
+    width: 50px;
+    margin-right: 1em;
+}
+
+.job-card .company-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-card .tags {
+    display: flex;
+    gap: 0.5em;
+}
+
+.job-card .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-card .meta span {
+    margin-right: 0.5em;
+}
+
+.tag {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+
+
+
+/* Add this CSS to your styles.css file */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    background-color: hsl(180, 31%, 95%);
+    color: hsl(180, 14%, 20%);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.filter-btn .clear-individual-btn {
+    margin-left: 0.5em;
+    background: none;
+    border: none;
+    color: hsl(180, 14%, 20%);
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.clear-filters-container {
+    display: none;
+    margin-top: 1em;
+    text-align: right;
+}
+
+.clear-filters-btn {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clear-filters-btn:hover {
+    background-color: hsl(180, 31%, 55%);
+}
+
+.filters .filter-btn.active {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+}
 
 .filters {
     display: flex;
